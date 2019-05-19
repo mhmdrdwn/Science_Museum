@@ -3,15 +3,33 @@
 	<head>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<meta name="keywords" content="science museum">
+		<meta name="keywords" content="science museum, mammoth, chemistry, science, biology, space, robot, children">
 		<meta name="description" content="this is the about us webpage for the website of science Museum">
 		<meta name="author" content="mohamed radwan">
 		<title>Science Museum | About Us</title>
 		<link rel="stylesheet" href="css/styles.css">
 	</head>
 	<body>
+		<!-- Hamburger Nav-->
+		<nav class="navigation">
+			<a href="index.html" class="right-items">Science Museum <img src="img/graphics/logo.png"></a>
+			<div id="menuToggle">
+				<input type="checkbox" />
+				<span></span>
+				<span></span>
+				<span></span>
+				<ul id="menu">
+					<a href="index.html"><li>Home</li></a>
+					<a href="#"><li>About</li></a>
+					<a href="events.html"><li>Events</li></a>
+					<a href="contact.html"><li>Contact Us</li></a>
+					<a href="membership.html"><li>Membership</li></a>
+				</ul>
+			</div>
+		</nav>
+		<!-- Nav -->
 		<nav class="navbar">
-			<a href="#" class="left-items">Science Museum</a>
+			<a href="index.html" class="left-items">Science Museum <img src="img/graphics/logo.png"></a>
 			<a href="index.html">Home</a>
 			<a href="#" class="active_item">About Us</a>
 			<a href="events.html">Events</a>
@@ -24,13 +42,13 @@
 			<div class="content-wrap">
 				<h1>Who Are We!</h1>
 				<p>The aim of our museum is to create a space where everyone can experience the wonders of our discoveries and perhaps even ignite a lifelong passion to continue the exploration of the world around us.
-We believe science should not be confined to the textbook, but brought to live through exhibits. This is why we have over 1000 different exhibits on the many varied subjects of science to explore. Many of these exhibits are designed for you to interact with and play around to see science come to life (apart from the dinosaur exhibits – they only come to life at night when everyone’s gone home). </p>
+				We believe science should not be confined to the textbook, but brought to live through exhibits. This is why we have over 1000 different exhibits on the many varied subjects of science to explore. Many of these exhibits are designed for you to interact with and play around to see science come to life (apart from the dinosaur exhibits – they only come to life at night when everyone’s gone home). </p>
 				<h1>Interested To Explore!</h1>
 				<h2>For kids</h2>
 				<p>Are you a young person looking to learn more about science? Come on down to our museum, there’s plenty to see and do.
-You can learn about Newtonian physics from our bumper swing, or why not travel back in time and meet our resident Woolly Mammoth? Our exhibits are designed to be accessible for interested minds, so make sure you come ready to learn and explore.
-We also have the Young Stars club which meets once a week on a Saturday between 10:00 and 13:00 where you’ll get to explore and experiment with our team of experts.
-During the school holidays we run special holiday clubs where you can join other children your age to go on a journey of discovery. Each holiday we pick a new theme to explore. To find out more about the holiday club and how you can join, send us a message.</p>
+				You can learn about Newtonian physics from our bumper swing, or why not travel back in time and meet our resident Woolly Mammoth? Our exhibits are designed to be accessible for interested minds, so make sure you come ready to learn and explore.
+				We also have the Young Stars club which meets once a week on a Saturday between 10:00 and 13:00 where you’ll get to explore and experiment with our team of experts.
+				During the school holidays we run special holiday clubs where you can join other children your age to go on a journey of discovery. Each holiday we pick a new theme to explore. To find out more about the holiday club and how you can join, send us a message.</p>
 				<h2>For teachers</h2>
 				<p>As a community-driven museum, we want to work with schools to create places of learning and exploring. Our team are on hand to give your students guided tours of the museum, teach them in our learning laboratory, and provide great video presentations that will excite and inspire them.
 				Please get in touch with us here to find out more about our facilities and to arrange a time to bring your students through for a visit.</p>
@@ -41,6 +59,31 @@ During the school holidays we run special holiday clubs where you can join other
 		<!-- Footer  -->
 		<footer>
 			<div class="content-wrap">
+				<div class="inline-element">
+					<h2>Location</h2>
+					<p>Jernbanetorget 1, Oslo Sentrum, Norway</p>
+					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2000.2902255871027!2d10.749207316095873!3d59.910730581866055!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46416e8a1a7b8c3d%3A0xc64b798e4a64a890!2sJernbanetorget+1%2C+0154+Oslo!5e0!3m2!1sen!2sno!4v1558263822819!5m2!1sen!2sno" width="230" height="210" frameborder="0" style="border:0" allowfullscreen></iframe>
+				</div>
+				<div class="inline-element">
+					<h2>Opening Times</h2>
+					<p>Monday: Closed<P>
+					<P>Tuesday: 10:00 – 16:00</p>
+					<p>Wednesday: 10:00 – 16:00</p>
+					<p>Thursday: 10:00 – 16:00</p>
+					<p>Friday: 10:00 – 19:00</p>
+					<p>Saturday: 9:00 – 16:00</p>
+					<p>Sunday: 9:00 – 13:00</p>
+				</div>	
+				<div class="inline-element">
+					<h2>Quick Links</h2>
+					<p><a href="">Sign In</a></p>
+					<p><a href="">Donate</a></p>
+					<p><a href="">Volunteer</a></p>
+					<p><a href="">Jobs</a></p>
+					<p><a href="">Activities</a></p>
+					<p><a href="">Food and Drink</a></p>
+					<p><a href="">Contact Us</a></p>
+				</div>
 				<h2>Follow us</h2>
 				<div class="contacts">
 					<a href="#"><img class="social_media" src="img/graphics/Social/flogo-RBG-Wht-1024.png"></a>
@@ -52,9 +95,5 @@ During the school holidays we run special holiday clubs where you can join other
 				<p class="copyright">Copyright@2019 by Science Museum</p>
 			</div>
 		</footer>
-		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
-		<script src="js/script.js"></script>
 	</body>
 </html>

@@ -3,7 +3,7 @@
 	<head>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<meta name="keywords" content="Science Museum">
+		<meta name="keywords" content="science museum, science, mammoth, chemistry, robot, space, bumiology">
 		<meta name="description" content="this is the home webpage for the website of Science Museum">
 		<meta name="author" content="mohamed radwan">
 		<title>Science Museum</title>
@@ -11,9 +11,26 @@
 
 	</head>
 	<body>
+		<!-- Hamburger Nav -->
+		<nav class="navigation">
+			<a href="index.html" class="right-items">Science Museum <img src="img/graphics/logo.png"></a>
+			<div id="menuToggle">
+				<input type="checkbox" />
+				<span></span>
+				<span></span>
+				<span></span>
+				<ul id="menu">
+					<a href="#"><li>Home</li></a>
+					<a href="about.html"><li>About</li></a>
+					<a href="events.html"><li>Events</li></a>
+					<a href="contact.html"><li>Contact Us</li></a>
+					<a href="membership.html"><li>Membership</li></a>
+				</ul>
+			</div>
+		</nav>
 		<!-- Nav -->
 		<nav class="navbar">
-			<a href="#" class="left-items">Science Museum</a>
+			<a href="#" class="left-items">Science Museum <img src="img/graphics/logo.png"></a>
 			<a href="#" class="active_item">Home</a>
 			<a href="about.html">About Us</a>
 			<a href="events.html">Events</a>
@@ -29,7 +46,7 @@
 				</div>
 				<div class="flex-content">
 					<div class="left-top">
-						<img class="left-top-img" src="./img/pictures/mammoth.jpg"alt="mammoth"/>
+						<img class="left-top-img" src="./img/images/mammoth.jpg" alt="mammoth"/>
 					</div>
 					<div class="right-top">
 						<h1>History of the world</h1>
@@ -43,6 +60,7 @@
 			<div class="content-wrap">
 				<div class="main-content-middle-top">
 					<h1>OUR LABS</h1>
+					<p>In our labs, you will get hands on real world experiments.</p>
 				</div>
 				<div class="flex-content">
 					<div class="hover-top-left left-top">	
@@ -90,20 +108,22 @@
 		<section class="main-programs">
 			<div class="content-wrap">
 				<h1>OUR SHOP</h1>
+				<p>Our shop offers a range of memorabilia from the museum as well as great gifts and activity packs that allow you to continue to explore science even after you’ve left the museum.</p>
 				<div class="res-column">
 					<div class="columns">
 						<h3>Arduino</h3>
 						<a href="">
-							<div>
+							<div class="shop-img-text">
+								<p>Control your house Appliances. The toolkit comes with accompanying software.</p>
 							</div>
-
 							<img class="home_image" src="img/images/arduino.jpeg">
 						</a>
 					</div>
 					<div class="columns">
 						<h3>Telescope</h3>
-						<a href="">
-							<div>
+						<a href="">	
+							<div class="shop-img-text">
+								<p>Explore the universe with Celestron 127EQ PowerSeeker Telescope</p>
 							</div>
 							<img class="home_image" src="img/images/telescope.jpeg">
 						</a>
@@ -111,16 +131,17 @@
 					<div class="columns">
 						<h3>Camera Drone</h3>
 						<a href="">
-							<div>
+							<div class="shop-img-text">
+								<p>The best friend to join you in your trips and take you the best photos</p>
 							</div>
-
 							<img class="home_image" src="img/images/drone.jpeg">
 						</a>
 					</div>
 					<div class="columns">
 						<h3>VR Toolkit</h3>
 						<a href="">
-							<div>
+							<div class="shop-img-text">
+								<p>Explore the world of Virtual Reality. The toolkit comes with Space Junkies game.</p>
 							</div>
 							<img class="home_image" src="img/images/vr.jpeg">
 						</a>
@@ -128,25 +149,26 @@
 					<div class="columns">
 						<h3>Electronic Toolkit</h3>
 						<a href="">
-							<div>
+							<div class="shop-img-text">
+								<p>Build your electronic circuits from scratch</p>
 							</div>
-
 							<img class="home_image" src="img/images/electronic.jpeg">
 						</a>
 					</div>
 					<div class="columns">
 						<h3>Microscope</h3>
 						<a href="">
-							<div>
+							<div class="shop-img-text">
+								<p>Explore the world of Biology with RB30 microscope</p>
 							</div>
-
 							<img class="home_image" src="img/images/microscope.jpeg">
 						</a>
 					</div>
 					<div class="columns">
 						<h3>Robot</h3>
-						<a href="">
-							<div>
+						<a href="">	
+							<div class="shop-img-text">
+								<p>Child friendly robot helps you with study</p>
 							</div>
 							<img class="home_image" src="img/images/robot2.jpeg">
 						</a>
@@ -166,6 +188,31 @@
 		<!-- Footer  -->
 		<footer>
 			<div class="content-wrap">
+				<div class="inline-element">
+					<h2>Location</h2>
+					<p>Jernbanetorget 1, Oslo Sentrum, Norway</p>
+					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2000.2902255871027!2d10.749207316095873!3d59.910730581866055!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46416e8a1a7b8c3d%3A0xc64b798e4a64a890!2sJernbanetorget+1%2C+0154+Oslo!5e0!3m2!1sen!2sno!4v1558263822819!5m2!1sen!2sno" width="230" height="210" frameborder="0" style="border:0" allowfullscreen></iframe>
+				</div>
+				<div class="inline-element">
+					<h2>Opening Times</h2>
+					<p>Monday: Closed<P>
+					<P>Tuesday: 10:00 – 16:00</p>
+					<p>Wednesday: 10:00 – 16:00</p>
+					<p>Thursday: 10:00 – 16:00</p>
+					<p>Friday: 10:00 – 19:00</p>
+					<p>Saturday: 9:00 – 16:00</p>
+					<p>Sunday: 9:00 – 13:00</p>
+				</div>	
+				<div class="inline-element">
+					<h2>Quick Links</h2>
+					<p><a href="">Sign In</a></p>
+					<p><a href="">Donate</a></p>
+					<p><a href="">Volunteer</a></p>
+					<p><a href="">Jobs</a></p>
+					<p><a href="">Activities</a></p>
+					<p><a href="">Food and Drink</a></p>
+					<p><a href="">Contact Us</a></p>
+				</div>
 				<h2>Follow us</h2>
 				<div class="contacts">
 					<a href="#"><img class="social_media" src="img/graphics/Social/flogo-RBG-Wht-1024.png"></a>
@@ -173,7 +220,7 @@
 					<a href="#"><img class="social_media" src="img/graphics/Social/snapchat.png"></a>
 					<a href="#"><img class="social_media" src="img/graphics/Social/youtube.png"></a>
 				</div>
-				<p class="copyright">Copyright@2019 by Re-Cycle</p>
+				<p class="copyright">Copyright@2019 by Science Museum</p>
 			</div>
 		</footer>
 	</body>
