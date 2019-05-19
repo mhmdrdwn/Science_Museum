@@ -4,9 +4,9 @@
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<meta name="keywords" content="Science Museum">
-		<meta name="description" content="this is the webpage of contacting science museum">
+		<meta name="description" content="this is the webpage of membership science museum">
 		<meta name="author" content="mohamed radwan">
-		<title>Science Museum | Contact Us</title>
+		<title>Science Museum | Membership</title>
 		<link rel="stylesheet" href="css/styles.css">
 
 	</head>
@@ -17,19 +17,28 @@
 			<a href="index.html">Home</a>
 			<a href="about.html">About Us</a>
 			<a href="events.html">Events</a>
-			<a href="#" class="active_item">Contact Us</a>
-			<a class="right-items" href="membership.html">Membership</a>
+			<a href="contact.html">Contact Us</a>
+			<a class="right-items active_item" href="#" >Membership</a>
 		</nav>
 		<main>
 		<!-- Main Body -->
 		<section class="main-body">
 			<div class="content-wrap">
-				<h2>Contact Us</h2>
+				<h2>Become a Member</h2>
 				<form action="" method="get">
-					<input type="text" name="name" placeholder="name">					                      					      <input type="text" name="email" placeholder="E-mail">
+					<input type="text" name="firstname" placeholder="First Name">	
+					<input type="text" name="lastname" placeholder="Last Name">
+					<input type="text" name="email" placeholder="E-mail">
 					<input type="text" name="phone" placeholder="Phone Number">
-					<textarea type="text" name="extras" placeholder="Write message here"></textarea>
-					<input type="submit" value="Submit">
+					<p>Type of membership:</p>
+					<select name="membership">
+						<option value="child">Child (7:18 years)</option>
+						<option value="adult">Adult</option>
+					</select>
+					<div class="checkbox">
+					<label><input type="checkbox" name="terms">I agree to <a href="">terms and conditions</a></label>
+					</div>
+					<input type="submit" value="Register">
 				</form>
 			</div>
 		</section>

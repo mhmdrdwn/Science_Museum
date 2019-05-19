@@ -18,9 +18,19 @@
 /* Variables */
 
 :root {
-	--yellow-transparent:rgba(224, 199, 113,0.7);
-	--pink-transparent:rgba(237, 111, 147, 0.7);
+	--yellow-transparent: rgba(224, 199, 113,0.7);
+	--pink-transparent: rgba(237, 111, 147, 0.7);	
+	--purple: #ED6F93;
+	--lightGreen: #72E2A1;
+	--yellow: #E0C771;
+	--darkYellow: #D09C7A;
+	--darkGreen: #839977;
+	--violet: #403353;
+	--white: #FFFFFF;
+	--black: #000000; 
+	--grey: #808080;
 }
+
 /* global */
 html {
 	box-sizing: border-box;
@@ -139,15 +149,17 @@ a:hover {
 	margin-top:0;
 	text-align:center;
 }
-.main-welcome .content-wrap .top-top h1{
+.top-top h1, .main-content-middle-top h1{
 	padding:15px;
 	font-size:50px;
 	margin:0px;
-	color:#FFFFFF;
 	font-family:Helvetica;
 	font-weight:bold;
 	padding-bottom:30px;
 
+}
+.top-top h1 {
+	color:#FFFFFF;	
 }
 .main-welcome .content-wrap .top-top h2, .main-welcome .content-wrap .right-top h2, .main-content-bottom .content-wrap .img-banner h2, .hover-text h2 {
 	font-size:25px;
@@ -155,9 +167,6 @@ a:hover {
 	font-family:Helvetica;
 	font-weight:bold;
 	padding-bottom:15px;
-}
-.main-welcome .content-wrap .top-top h2{
-	color:#FFFFFF;
 }
 
 .main-welcome .content-wrap .right-top h2, .main-content-botttom .content-wrap .img-banner h2{
@@ -168,7 +177,6 @@ a:hover {
 	width:100%;
 	height:100%
 }
-
 .main-welcome .content-wrap .right-top h1, .main-content-bottom .content-wrap .img-banner h1, .hover-text h1{
 	font-family:Helvetica;
 	font-size:35px;
@@ -179,78 +187,102 @@ a:hover {
 	margin:auto;
 	padding:10px;
 	background: -webkit-linear-gradient(#403353, #ED6F93);
-  	-webkit-background-clip: text;
-  	-webkit-text-fill-color: transparent;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
 }
 button {
 	background-color: #403353;
-  	border: none;
-  	color: white;
-  	padding: 15px 32px;
-  	text-align: center;
-  	text-decoration: none;
-  	display: inline-block;
-  	font-size: 16px;
+	border: none;
+	color: white;
+	padding: 15px 32px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
 	border-radius:5px;	
 }
 button:hover {
 	background-color:#ED6F93;
+	color:#000000;
 }
 
 /* main-content-middle section */
-.main-content-middle {
+.main-content-middle, .main-programs {
 	background: linear-gradient(to bottom right , #E0C771, #ED6F93);
+	padding-bottom:50px;
+	text-align:center;
+}
+.main-content-middle-top {
+	margin:auto;
+	text-align:center;
+	margin-top:20px;
+	margin-bottom:15px;	
+}
+.main-content-middle-top h1, .main-programs h1, .main-body h1{	
+	background: -webkit-linear-gradient(#403353, #ED6F93);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	font-size:50px;
+}
+.hover-bottom-left {
+	background: url(../img/images/chemistry.jpeg) no-repeat center center; 
+}
+.hover-bottom-right {
+	background: url(../img/images/anatomy.jpeg) no-repeat center center; 
+}
+.hover-top-right {
+	background: url(../img/images/space.jpeg) no-repeat center center; 
+}
+.hover-top-left {
+	background: url(../img/images/robot3.jpeg) no-repeat center center; 
 }
 .hover-top-left, .hover-bottom-left, .hover-bottom-right, .hover-top-right {
-	background: url(../img/images/andrew-ruiz-348421.jpg) no-repeat center center; 
+	border:1px solid #403353;
+	box-shadow: 2.5px 5px;
 	-webkit-background-size: cover;
-  	-moz-background-size: cover;
-  	-o-background-size: cover;
-  	background-size: cover;		
-	min-height:200px;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;		
+	min-height:450px;
 	min-width:200px;
+	border-radius:10px;
+	margin-bottom:10px;
 }
 .hover-text {
 	text-align:center;
 	display:none;
+	padding:20px;
 }
 .hover-top-left:hover, .hover-bottom-left:hover, .hover-bottom-right:hover, .hover-top-right:hover {
 	background:linear-gradient(to bottom right , #E0C771, #ED6F93);
+	transform: rotateY(180deg);
+	transition: transform 500ms linear;
+	box-shadow: 0px 0px;
 }
-.hover-top-left:hover .hover-text {
+.hover-top-left:hover .hover-text, .hover-bottom-left:hover .hover-text, .hover-bottom-right:hover .hover-text, .hover-top-right:hover .hover-text {	
 	opacity:1;
 	display:block;
+	transform: rotateY(180deg);
 }
-.hover-bottom-left:hover .hover-text {
-	opacity:1;
-	display:block;
-}
-.hover-bottom-right:hover .hover-text {
-	opacity:1;
-	display:block;
-}
-.hover-top-right:hover .hover-text {
-	opacity:1;
-	display:block;
-}
+
 /* main-content-bottom section */
 .main-content-bottom {
 	min-height:750px;
 	background-color:#FFFFFF;
 	background: url(../img/images/library.jpg) no-repeat center center; 
 	-webkit-background-size: cover;
-  	-moz-background-size: cover;
-  	-o-background-size: cover;
-  	background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
 }
 .img-banner {
 	background:linear-gradient(to bottom right , var(--yellow-transparent), var(--pink-transparent));
-	/*background:var(--Pink-transparent);*/
 	max-width:350px;
 	padding:10px;
 	margin:auto;
 	margin-top:250px;
 	text-align:center;
+	-webkit-text-stroke: 0.2px #000000;
 }
 
 /* header and footer */
@@ -266,11 +298,7 @@ footer h2{
 header {
 	padding-top: 30px;
 }
-footer a{
-	font-weight:800;
-}
 footer .content-wrap{
-	height:280px;
 	padding:50px;
 }
 .contacts a {
@@ -284,18 +312,13 @@ footer .content-wrap{
 	margin:10px;
 }
 .social_media:hover{
-	background:green;
-	border:1px solid green;
+	background:#ED6F93;
+	border:1px solid #ED6F93;
 }
 .copyright{
 	font-size:15px;
 	padding-top:15px;
 	color:#FFFFFF;
-}
-
-/* main background */
-.main_background .content-wrap {
-	text-align:left;
 }
 
 /* main body */
@@ -304,11 +327,12 @@ footer .content-wrap{
 	text-decoration:none;
 }
 .columns a {
-	color:#FFFFFF;
-	text-decoration:underline;
+	color:#000000;
+	text-decoration:none;
 }
 .columns h3{
-	color:#FFFFFF;
+	color:#000000;
+	font-size:30px;
 }
 #set_space_about_us{
 	margin-top:100px;
@@ -316,12 +340,25 @@ footer .content-wrap{
 .main-programs .content-wrap p{
 	font-size:20px;
 }
-.home_image, iframe{
+.home_image {
 	width:100%;
 	min-height:190px;
 }
+.shop-img-text {
+	display:none;
+	min-height:190px;
+	width:100%;
+}
+.columns:hover .home_image{
+	display:none;	
+}
+.columns:hover .shop-img-text {
+	display:inline;
+	padding:70px;
+}
 .columns{
-	background:#000000;	
+	background:linear-gradient(to bottom right , #ED6F93, #403353);	
+	box-shadow: 2.5px 5px;
 	padding:10px;
 	max-height: 700px;
 	min-width:250px;
@@ -329,6 +366,7 @@ footer .content-wrap{
 	max-width:280px;
 	justify-content:center;
 	border-radius:10px;
+	border:1px solid #000000;
 }
 /* Adjusting the heights of all the divs. References:https://stackoverflow.com/questions/29587980/responsive-equal-height-columns-in-rows-with-css3-html5-only */
 .res-column{
@@ -340,59 +378,84 @@ footer .content-wrap{
 	justify-content: center;
 
 }
-.main-programs {
-	/*background: #5688C5;*/
-	background-image: linear-gradient(to bottom right , #5688C5, green);
-	text-align: center;
+.main-body {
+	background:linear-gradient(to bottom right , #E0C771, #ED6F93);
 }
-.main-programs input, .main-programs textarea {
-	width: 50%;
+.main-body .content-wrap {
+	opacity:1.0;
+	text-align:center;
+	padding:10px;
+	padding-top:120px;
+	padding-bottom:50px;
+}
+.main-body input, .main-body textarea, .main-body select {
 	padding: 15px 15px;
-	margin: 5px 0;
-	border: 2px solid #5688C5;
+	margin: auto;
+	margin-bottom:10px;
+	border: 2px solid var(--violet);
 	font-size: 15px;
 	border-radius: 5px;
 	color:#000000;
 	font-weight:bold;
-	background:#FFFFFF;
+	background:var(--white);
 	max-width:430px;
 }
-.main-programs input[type="text"]:hover, .main-programs textarea:hover {
-	border:2px solid #000000;
+.main-body input, .main-body textarea {
+	width:50%;
+	display:block;
 }
-.main-programs .content-wrap {
-	opacity:100%;
+.main-body p, .main-body label{
+	font-weight:bold;
+	display:inline;
+}
+.main-body input[type="checkbox"]{
+	display:inline;
+	width:20px;
+	margin:25px;
+}
+.main-body select {
+	width:22.5%;	
+}
+.checkbox {
+	max-width: 430px;
+	margin: auto;
+	text-align:left;
 }
 
-.main-programs [type="submit"] {
-	background:#000000;
-	color: #FFFFFF;
+.main-body input[type="text"]:hover, .main-body textarea:hover {
+	border:2px solid var(--purple);
+}
+.main-body [type="submit"] {
+	background:var(--black);
+	color: var(--white);
 	font-size: 20px;
-	border:2px solid #000000;
-
+	border:2px solid var(-violet);
 }
-.main-programs [type="submit"]:active, .main-programs [type="submit"]:hover {
-	border: 2px solid #5688C5;
+.main-body [type="submit"]:active, .main-body [type="submit"]:hover {
+	border: 2px solid var(--purple);
 }
 
-.main-programs input:focus::-webkit-input-placeholder { 
+.main-body input:focus::-webkit-input-placeholder { 
 	color:transparent; 
 }
-.main-programs input:focus:-moz-placeholder { 
+.main-body input:focus:-moz-placeholder { 
 	color:transparent; 
 }
 
 /* Media queries */
 @media (max-width: 600px){
-	.main-programs input, .main-programs textarea {
+	.main-body input, .main-body textarea {
 		width: 90%;
+	}
+	.main-body select{
+		width:47%;
 	}
 	.main-welcome .content-wrap .flex-content .right-top, .main-welcome .content-wrap .flex-content .left-top, .main-content-middle .content-wrap .flex-content .right-top, .main-content-middle .content-wrap .flex-content .left-top {
 		display: flex;
-  		flex-direction: column;
-  		flex-basis: 100%;
+		flex-direction: column;
+		flex-basis: 100%;
 		min-width:200px;
-		min-height:200px;
+		min-height:400px;
 	}
 	.main-welcome .content-wrap .flex-content .right-top {
 		padding:50px;
@@ -402,9 +465,9 @@ footer .content-wrap{
 	}
 	.main-welcome .content-wrap .flex-content, .main-content-middle .content-wrap .flex-content {
 		display: flex;
-  		flex-direction: row;
-  		flex-wrap: wrap;
-  		width: 100%;
+		flex-direction: row;
+		flex-wrap: wrap;
+		width: 100%;
 	}
 }
 @media (min-width:601px) and (max-width:1100px) {
@@ -416,7 +479,7 @@ footer .content-wrap{
 		display:inline-block;
 
 	}
-	.main-programs input, .main-programs textarea {
+	.main-body input, .main-body textarea {
 		width: 70%;
 	}
 	.main_background{
