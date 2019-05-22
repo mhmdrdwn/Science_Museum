@@ -7,35 +7,36 @@
 		<meta name="description" content="this is the about us webpage for the website of science Museum">
 		<meta name="author" content="mohamed radwan">
 		<title>Science Museum | About Us</title>
-		<link rel="stylesheet" href="css/styles.css">
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+ 		<link rel="stylesheet" href="css/styles.css">
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 	</head>
 	<body>
-		<!-- Hamburger Nav-->
-		<nav class="navigation">
-			<a href="index.html" class="right-items">Science Museum <img src="img/graphics/logo.png"></a>
-			<div id="menuToggle">
-				<input type="checkbox" />
-				<span></span>
-				<span></span>
-				<span></span>
-				<ul id="menu">
-					<a href="index.html"><li>Home</li></a>
-					<a href="#"><li>About</li></a>
-					<a href="events.html"><li>Events</li></a>
-					<a href="contact.html"><li>Contact Us</li></a>
-					<a href="membership.html"><li>Membership</li></a>
-				</ul>
-			</div>
-		</nav>
-		<!-- Nav -->
-		<nav class="navbar">
-			<a href="index.html" class="left-items">Science Museum <img src="img/graphics/logo.png"></a>
-			<a href="index.html">Home</a>
-			<a href="#" class="active_item">About Us</a>
-			<a href="events.html">Events</a>
-			<a href="contact.html">Contact Us</a>
-			<a class="right-items" href="membership.html">Membership</a>
-		</nav>
+		<nav class="navbar navbar-dark navbar-expand-md justify-content-center">
+                         <a href="index.html" class="navbar-brand mr-0 left-items"><img src="img/graphics/logo.png">Science Museum</a>
+                         <button class="navbar-toggler ml-1" type="button" data-toggle="collapse" data-target="#collapsingNavbar2">
+                                 <span class="navbar-toggler-icon"></span>
+                         </button>
+                         <div class="navbar-collapse collapse justify-content-between align-items-center w-100" id="collapsingNavbar2">
+                                 <ul class="navbar-nav mx-auto text-center">
+                                         <li class="nav-item">
+                                                 <a class="nav-link" href="index.html">Home</a>
+                                         </li>
+                                         <li class="nav-item active">
+                                                 <a class="nav-link" href="#">About Us</a>
+                                         </li>
+                                         <li class="nav-item">
+                                                 <a class="nav-link" href="events.html">Events</a>
+                                         </li>
+                                         <li class="nav-item">
+                                                 <a class="nav-link" href="contact.html">Contact Us</a>
+                                         </li>
+                                 </ul>
+                                 <ul class="nav navbar-nav flex-row justify-content-center flex-nowrap">
+                                         <li class="nav-item"><a class="nav-link" href="membership.html">Membership</a> </li>
+                                 </ul>
+                 </nav>
+
 		<main>
 		<!-- Main Body -->
 		<section class="main-body">
@@ -61,8 +62,8 @@
 			<div class="content-wrap">
 				<div class="inline-element">
 					<h2>Location</h2>
-					<p>Jernbanetorget 1, Oslo Sentrum, Norway</p>
-					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2000.2902255871027!2d10.749207316095873!3d59.910730581866055!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46416e8a1a7b8c3d%3A0xc64b798e4a64a890!2sJernbanetorget+1%2C+0154+Oslo!5e0!3m2!1sen!2sno!4v1558263822819!5m2!1sen!2sno" width="230" height="210" frameborder="0" style="border:0" allowfullscreen></iframe>
+					<p class="para-address">Jernbanetorget 1,Oslo Sentrum, Norway</p>
+					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2000.2902255871027!2d10.749207316095873!3d59.910730581866055!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46416e8a1a7b8c3d%3A0xc64b798e4a64a890!2sJernbanetorget+1%2C+0154+Oslo!5e0!3m2!1sen!2sno!4v1558263822819!5m2!1sen!2sno" width="230" height="205" frameborder="0" style="border:0" allowfullscreen></iframe>
 				</div>
 				<div class="inline-element">
 					<h2>Opening Times</h2>
@@ -95,5 +96,8 @@
 				<p class="copyright">Copyright@2019 by Science Museum</p>
 			</div>
 		</footer>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+                <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
 	</body>
 </html>
